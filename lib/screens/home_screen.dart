@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test2/repository/note_repository.dart';
+import 'package:MySimpleNote/repository/note_repository.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  // Add or edit note
+  // Add & edit note
   Future<void> _addOrEditNote({Map<String, dynamic>? note}) async {
     final titleController = TextEditingController();
     final contentController = TextEditingController();
